@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "team": "mappers"
+                }
+            }
+        }
+    }, "rewards": {
+        "function": "shriek:gamehandler/start/mapping"
+    }
+}
