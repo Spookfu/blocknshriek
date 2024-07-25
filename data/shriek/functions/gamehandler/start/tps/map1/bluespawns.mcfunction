@@ -1,4 +1,4 @@
-
+# Blue Spawn Locations for Map 1
 execute if score blueSpawn gameHandler matches 1 run tp @s 6.5 -41 -11.5 facing 6.5 -41 -10.5
 execute if score blueSpawn gameHandler matches 2 run tp @s -7.5 -41 5.5 facing -6.5 -41 5.5
 execute if score blueSpawn gameHandler matches 3 run tp @s 8.5 -41 17.5 facing 7.5 -41 17.5

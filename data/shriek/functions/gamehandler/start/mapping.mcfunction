@@ -1,6 +1,9 @@
+# Map Selection Functions
 advancement revoke @s only shriek:mapping-rightc
 
 tag @s add mapping
+
+# Respective Map Scoring, Sounds, and Visual Feedback
 execute at @a run playsound minecraft:ui.cartography_table.take_result master @a ~ ~ ~ 1 0.1 1
 execute at @a run particle minecraft:poof ~ ~ ~ 0 1 0 1 50 normal
 execute at @a run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 1 0.1 1
