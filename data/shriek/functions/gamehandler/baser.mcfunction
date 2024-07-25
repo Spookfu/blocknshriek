@@ -1,0 +1,2 @@
+function shriek:gamehandler/status/status_check
+function shriek:gamehandler/runes/runeshandler
