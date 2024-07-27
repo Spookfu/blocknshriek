@@ -10,7 +10,7 @@ A recreation of the game [Hide and Shriek](https://store.steampowered.com/app/48
 [07/06/24 Stable Build 1.2](https://github.com/Spookfu/blocknshriek/commit/595aa5c9b9617be3afe2cb526539adc6a5248969)
 
 **Files**:
-- [World .zip File (w/ Datapack)](block-n-shriek-sr1.2a.zip)
+- [World .zip File (w/ Datapack)](block-n-shriek-sr1.2b.zip)
 - [Datapack Files](datapack)
 
 
