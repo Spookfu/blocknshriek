@@ -1,0 +1,1 @@
+scoreboard players set @a shrieker-reducer 0

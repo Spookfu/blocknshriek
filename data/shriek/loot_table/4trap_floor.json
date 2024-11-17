@@ -1,0 +1,76 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "bonus_rolls": 0,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:raiser_armor_trim_smithing_template",
+                "weight": 1,
+                "functions": [
+                  {
+                    "function": "minecraft:set_name",
+                    "entity": "this",
+                    "name": [
+                      {
+                        "text": "[",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "♮",
+                        "color": "yellow",
+                        "italic": false
+                      },
+                      {
+                        "text": "]",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": " ꜰʀᴀᴜꜱ ꜱᴏʟᴜᴍ ʀᴜɴᴇ",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "function": "minecraft:set_lore",
+                    "entity": "this",
+                    "lore": [
+                      {
+                        "text": "A strange stone that emits",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "a sinister energy, awating",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "from below.",
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ],
+                    "mode": "append"
+                  },
+                  {
+                    "function": "minecraft:set_custom_data",
+                    "tag": "{trap-floor: 1, rune: 1}"
+                  },
+                  {
+                    "function": "minecraft:set_components",
+                    "components": {
+                      "minecraft:hide_additional_tooltip": {}
+                    }
+                  }
+                ]
+              }
+        ]
+    }
+]
+}
