@@ -21,16 +21,16 @@ A recreation of the game [Hide and Shriek](https://store.steampowered.com/app/48
 - [x] Shrieker Handler
 - [x] Status/Motion Level System
 - [ ] Basic Game Functions
-- [ ] End Game Functions
-- [ ] Runes Handler
+- [x] End Game Functions
+- [x] Runes Handler
 - [ ] Spells Handler
 - [ ] Trinkets System
 - [ ] Dynamic Loots
 - [ ] Map Events/Terrors
-- [ ] 3+ Player Support
+- [x] 3+ Player Support
 - [ ] Completed Hub
 - [ ] Map 1 - Sculked Academy
 - [ ] Map 2 - Infested Woods
 - [ ] Map 3 - Creaking Dungeons
 
-**Completion Percentage: 13%**
+**Completion Percentage: 18%**
