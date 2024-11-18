@@ -2,15 +2,15 @@
 A recreation of the game [Hide and Shriek](https://store.steampowered.com/app/480430/Hide_and_Shriek/) in Minecraft, taking inspirations and expanding upon the base concepts of the game.
 
 ## Project Details
-**Curent Build**: Stable Build v1.2 Alpha
+**Curent Build**: Stable Build v1.3 Alpha
 
-**MC Version**: 1.20.6
+**MC Version**: 1.21
 
 **Latest Commit**: 
-[07/06/24 Stable Build 1.2](https://github.com/Spookfu/blocknshriek/commit/595aa5c9b9617be3afe2cb526539adc6a5248969)
+[Stable Release 11/17/24 v1.3a]([https://github.com/Spookfu/blocknshriek/commit/595aa5c9b9617be3afe2cb526539adc6a5248969](https://github.com/Spookfu/blocknshriek/commit/4b2359af5fcc160f180e2182d88e5ffaae81594e))
 
 **Files**:
-- [World .zip File (w/ Datapack)](block-n-shriek-sr1.2b.zip)
+- [World .zip File (w/ Datapack)](block-n-shriek-sr1.2b.zip) [OUTDATED]
 - [Datapack Files](datapack)
 
 
