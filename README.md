@@ -1,18 +1,16 @@
-# Block and Shriek Minecraft Map Project
-A recreation of the game [Hide and Shriek](https://store.steampowered.com/app/480430/Hide_and_Shriek/) in Minecraft, taking inspirations and expanding upon the base concepts of the game.
+# Block and Shriek
+_A Minecraft minigame centered around one goal, scaring your friends. Strategize and fight for 10 Minutes in three unique maps, utilizing spells, map quirks and events, trinkets, and much more!_
 
-## Project Details
-**Curent Build**: Stable Build v1.3 Alpha
+## Preface
+This is a recreation of the game **[Hide and Shriek](https://store.steampowered.com/app/480430/Hide_and_Shriek/)** in Minecraft with the usage of a Datapack and Resource Pack. _I work on this in my free time, so please be patient! **This may not be finished for a while!**_ 
 
-**MC Version**: 1.21
+If you have issues, bug reports, suggestions, or something along those lines, join the [Discord](https://discord.gg/77jXr2gQ4t).
 
-**Latest Commit**: 
-[Stable Release 11/17/24 v1.3a]([https://github.com/Spookfu/blocknshriek/commit/595aa5c9b9617be3afe2cb526539adc6a5248969](https://github.com/Spookfu/blocknshriek/commit/4b2359af5fcc160f180e2182d88e5ffaae81594e))
-
-**Files**:
-- [World .zip File (w/ Datapack)](block-n-shriek-sr1.2b.zip) [OUTDATED]
-- [Datapack Files](datapack)
-
+## Current Progress
+The list below shows a simplified version of the roadmap for this project. I'll update this occasionally and add some screenshots to the gallery section whenever possible. Here's some expectations:
+1. A semi-stable release of the Map will always be available. This will most likely not include any of the recent things I've added.
+2. The Resource pack and its textures will not be final UNTIL the Official Release. If you would like to help with the custom textures, please contact me on Discord.
+3. Names of Maps, Runes, Spells, Descriptions, etc. are not Final.
 
 ## Project To-Do List
 - [x] Basic Looting System
@@ -27,10 +25,10 @@ A recreation of the game [Hide and Shriek](https://store.steampowered.com/app/48
 - [ ] Trinkets System
 - [ ] Dynamic Loots
 - [ ] Map Events/Terrors
-- [x] 3+ Player Support
+- [ ] 3+ Player Support
 - [ ] Completed Hub
 - [ ] Map 1 - Sculked Academy
 - [ ] Map 2 - Infested Woods
 - [ ] Map 3 - Creaking Dungeons
 
-**Completion Percentage: 18%**
+**Completion Percentage: 17%**
