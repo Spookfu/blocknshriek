@@ -12,3 +12,10 @@ execute at @e[tag=creakMap] run particle minecraft:trial_spawner_detection_omino
 execute if block -14 -60 54 minecraft:oak_button[powered=true] run function shriek:gamehandler/start/reqcheck
 execute if block -14 -60 54 minecraft:oak_button[powered=true,face=floor] run setblock -14 -60 54 minecraft:oak_button[powered=false,face=floor]
 particle minecraft:end_rod -13.5 -60 66.5 0 10 0 0 1
+
+# Triggers
+execute as @a[scores={shriek.end=1..}] run function shriek:triggers/helper.end
+scoreboard players enable @a shriek.end
+
+execute as @a[scores={shriek.start=1..}] run function shriek:triggers/helper.start
+scoreboard players enable @a shriek.start

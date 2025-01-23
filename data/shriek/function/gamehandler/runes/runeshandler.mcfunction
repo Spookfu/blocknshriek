@@ -12,9 +12,9 @@ execute as @s[scores={looting=1}] run function shriek:gamehandler/runes/looter
 # Spell Handler Checks
 
 
-execute as @s[scores={slot1=0}] run clear @s[nbt=!{Inventory:[{count:1,Slot:0b, components:{"minecraft:custom_data":{slots:1}}}]},tag=Players] #c:glass_panes
-execute as @s[scores={slot2=0}] run clear @s[nbt=!{Inventory:[{count:1,Slot:1b, components:{"minecraft:custom_data":{slots:1}}}]},tag=Players] #c:glass_panes
-execute as @s[scores={slot3=0}] run clear @s[nbt=!{Inventory:[{count:1,Slot:2b, components:{"minecraft:custom_data":{slots:1}}}]},tag=Players] #c:glass_panes
+execute as @s[scores={slot1=0}] run clear @s[nbt=!{Inventory:[{count:1,Slot:0b, components:{"minecraft:custom_data":{slots:1}}}]},tag=Players] #shriek:slots
+execute as @s[scores={slot2=0}] run clear @s[nbt=!{Inventory:[{count:1,Slot:1b, components:{"minecraft:custom_data":{slots:1}}}]},tag=Players] #shriek:slots
+execute as @s[scores={slot3=0}] run clear @s[nbt=!{Inventory:[{count:1,Slot:2b, components:{"minecraft:custom_data":{slots:1}}}]},tag=Players] #shriek:slots
 
 execute as @s[scores={slot1=0}] run item replace entity @s hotbar.0 with minecraft:glass_pane[can_break={predicates:[{blocks:"decorated_pot"},{blocks:"flower_pot"}],show_in_tooltip:false},item_name='[{"color":"gray","text":"[ "},{"color":"dark_green","text":"ʀᴜɴᴇ ꜱʟᴏᴛ "},{"bold":true,"color":"dark_green","text":"1","underlined":true}," ]"]',custom_data={slot:1, slots:1}] 1
 execute as @s[scores={slot2=0}] run item replace entity @s hotbar.1 with minecraft:glass_pane[can_break={predicates:[{blocks:"decorated_pot"},{blocks:"flower_pot"}],show_in_tooltip:false},item_name='[{"color":"gray","text":"[ "},{"color":"yellow","text":"ʀᴜɴᴇ ꜱʟᴏᴛ "},{"bold":true,"color":"yellow","text":"2","underlined":true}," ]"]',custom_data={slot:1, slots:1}] 1

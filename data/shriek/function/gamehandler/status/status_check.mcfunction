@@ -14,7 +14,7 @@ tag @s[nbt={OnGround:1b}] remove jumped
 
 # Status Inventory Preventors
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{group-status:1}}}}]
-clear @s[nbt=!{Inventory:[{count:1,Slot:8b, components:{"minecraft:custom_data":{group-status:1}}}]},tag=Players] #c:concrete
+clear @s[nbt=!{Inventory:[{count:1,Slot:8b, components:{"minecraft:custom_data":{group-status:1}}}]},tag=Players] #shriek:status
 
 # Status Checkers
 execute as @s[tag=!sprinting,tag=!jumping] run function shriek:gamehandler/status/green

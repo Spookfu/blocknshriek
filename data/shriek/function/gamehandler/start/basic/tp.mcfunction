@@ -16,8 +16,8 @@ gamemode spectator @a[team=Spectators]
 gamemode adventure @a[tag=Players]
 
 # Health
-attribute @a[tag=Players,limit=1] minecraft:generic.max_health base set 1
-attribute @a[tag=!Players,limit=1] minecraft:generic.max_health base set 20
+attribute @a[tag=Players,limit=1] minecraft:max_health base set 1
+attribute @a[tag=!Players,limit=1] minecraft:max_health base set 20
 
 # Shrieker Setups
 scoreboard players set @a[tag=Players] shrieker-timer 30

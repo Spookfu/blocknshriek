@@ -20,8 +20,8 @@ execute unless score BASE shrieker-dura matches 120 run scoreboard players set B
 execute unless items entity @s hotbar.4 crossbow run function shriek:gamehandler/shrieker/unloaded
 
 # Visual HUD of Shrieker Cooldown Timer/Status
-execute unless entity @s[scores={shrieker-reducer=1}] run title @s[scores={shrieker-baser=0}] actionbar ["ꜱʜʀɪᴇᴋᴇʀ ᴏɴ ", {"text":"Cooldown","color":"red","bold":true},{"text":" - ⏳ ","color":"gray"},{"score":{"name":"@s","objective":"shrieker-timer"}},{"text":"s"}]
-title @s[scores={shrieker-baser=1}] actionbar ["ꜱʜʀɪᴇᴋᴇʀ ɪꜱ ɴᴏᴡ ",{"text":"ACTIVE","color":"green","bold":true}]
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:crossbow"}}] run execute unless entity @s[scores={shrieker-reducer=1}] run title @s[scores={shrieker-baser=0}] actionbar ["ꜱʜʀɪᴇᴋᴇʀ ᴏɴ ", {"text":"Cooldown","color":"red","bold":true},{"text":" - ⏳ ","color":"gray"},{"score":{"name":"@s","objective":"shrieker-timer"}},{"text":"s"}]
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:crossbow"}}] run title @s[scores={shrieker-baser=1}] actionbar ["ꜱʜʀɪᴇᴋᴇʀ ɪꜱ ɴᴏᴡ ",{"text":"ACTIVE","color":"green","bold":true}]
 
 # Temporary Standin, until Hit-checks are implemented. Sets the timer to 120s
 execute unless entity @s[scores={shrieker-on=1}] run execute as @s[scores={shrieker-baser=0}] run scoreboard players set @s shrieker-timer 120
