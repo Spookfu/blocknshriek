@@ -16,19 +16,19 @@ The list below shows a simplified version of the roadmap for this project. I'll 
 - [x] Basic Looting System
 - [x] Game Start-up Sequence
 - [x] Team/Map Selectors
-- [x] Shrieker Handler
+- [x] Shrieker Handler [Revising]
 - [x] Status/Motion Level System
-- [ ] Basic Game Functions
-- [x] End Game Functions
-- [x] Runes Handler
-- [ ] Spells Handler
+- [ ] Basic Game Functions [Started]
+- [x] End Game Functions [Revising]
+- [x] Runes Handler [Revising]
+- [ ] Spells Handler [Started]
 - [ ] Trinkets System
 - [ ] Dynamic Loots
-- [ ] Map Events/Terrors
-- [ ] 3+ Player Support
-- [ ] Completed Hub
-- [ ] Map 1 - Sculked Academy
+- [ ] Map Events/Terrors [Started]
+- [ ] 3+ Player Support [Started]
+- [ ] Completed Hub [Started]
+- [ ] Map 1 - Sculked Academy [Started]
 - [ ] Map 2 - Infested Woods
 - [ ] Map 3 - Creaking Dungeons
 
-**Completion Percentage: 17%**
+**Completion Percentage: 19%**
