@@ -1,11 +1,12 @@
-# Sets the score "shrieker-on" to prevent continous running of this function, and other one-time runs for Shrieker Usage
-scoreboard players set @a[scores={shrieker-baser=0}] shrieker-on 1
+scoreboard players set @a[scores={shrieker-status=0},tag=!shrieked] shrieker-cd 120
+tag @a[scores={shrieker-status=0}] add shrieked
 
-# Removes one from the timer score.
-execute unless entity @a[scores={shrieker-baser=0,shrieker-timer=..0}] run scoreboard players remove @a[scores={shrieker-baser=0},tag=!hiding] shrieker-timer 1
+# Removes one from the timer score. 
+scoreboard players remove @a[scores={shrieker-cd=1..},tag=!hiding,tag=shrieked] shrieker-cd 1
 
 # Runs the schedule again in 1s
-execute unless entity @a[scores={shrieker-baser=0,shrieker-timer=..0},tag=!hiding] run schedule function shriek:gamehandler/shrieker/timing 1s
+execute if entity @a[scores={shrieker-cd=1..}] run schedule function shriek:gamehandler/shrieker/timing 1s
 
-# If cooldown complete (shrieker-timer score of 0 or less), run the returner function.
-execute as @a[scores={shrieker-baser=0,shrieker-timer=..0}] run function shriek:gamehandler/shrieker/returner
+
+# # If cooldown complete (shrieker-timer score of 0 or less), run the returner function.
+execute as @a[scores={shrieker-cd=..0},tag=shrieked] run function shriek:gamehandler/shrieker/returner

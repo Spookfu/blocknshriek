@@ -5,9 +5,6 @@ gamemode adventure @a
 effect clear @a
 execute as @a run playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 0.1 1
 title @a times 0t 4s 4t
-scoreboard players set @a shrieker-timer 30
-scoreboard players set @a shrieker-on 1
-scoreboard players set @a shrieker-baser 0
 scoreboard players set @a shrieker-dura 0
 scoreboard players set @a heartbeat-timer 0
 scoreboard players set @a looting 0
