@@ -11,5 +11,4 @@ summon firework_rocket -17.5 -58.5 48.5 {Glowing:1b,FireworksItem:{id:"minecraft
 effect give @a[tag=win] glowing infinite 1 true
 team join win @a[tag=win]
 
-schedule clear shriek:gamehandler/start/endwin_anim
-scoreboard players set endWin_anim gameHandler 0
+schedule clear shriek:gamehandler/end/endwinanim

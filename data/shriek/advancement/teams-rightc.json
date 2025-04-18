@@ -10,6 +10,6 @@
             }
         }
     }, "rewards": {
-        "function": "shriek:gamehandler/start/rteams"
+        "function": "shriek:gamehandler/hub/teaming"
     }
 }

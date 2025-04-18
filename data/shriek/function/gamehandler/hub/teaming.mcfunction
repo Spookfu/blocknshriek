@@ -11,7 +11,7 @@ effect give @s glowing infinite 1 true
 execute as @e[type=interaction,tag=teamSpec] on target run team join Spectators
 
 
-# Unlessers for Blue
+# Unlessers
 execute unless score blue teams matches 1 run execute as @e[type=interaction,tag=teamBlue] on target run team join Blue
 execute unless score blue teams matches 1 run execute as @e[type=interaction,tag=teamBlue] on target run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 0.1 1
 

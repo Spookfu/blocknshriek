@@ -10,6 +10,6 @@
             }
         }
     }, "rewards": {
-        "function": "shriek:gamehandler/start/mapping"
+        "function": "shriek:gamehandler/hub/mapping"
     }
 }
