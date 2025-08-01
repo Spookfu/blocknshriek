@@ -15,9 +15,11 @@ execute at @a[tag=!hiding] as @n[type=interaction,tag=hideSpot] on target run fu
 
 # Exiting Spot Functions
 effect clear @a[nbt=!{RootVehicle:{Entity:{Tags:["hideRide"]}}},tag=hiding] slowness
+item replace entity @a[nbt=!{RootVehicle:{Entity:{Tags:["hideRide"]}}},tag=hiding] armor.head with air
 tag @a[nbt=!{RootVehicle:{Entity:{Tags:["hideRide"]}}},tag=hiding] remove hiding
 
 # Slabbings
 execute as @a[tag=hiding] at @s if entity @e[type=interaction,tag=slab,tag=hideRide,distance=..2] run tag @s add slabbed
 execute as @a[nbt=!{RootVehicle:{Entity:{Tags:["hideRide"]}}},tag=slabbed] at @s run tp @s @e[type=interaction,tag=outing,limit=1,sort=nearest]
+item replace entity @a[nbt=!{RootVehicle:{Entity:{Tags:["hideRide"]}}},tag=slabbed] armor.head with air
 tag @a[nbt=!{RootVehicle:{Entity:{Tags:["hideRide"]}}},tag=slabbed] remove slabbed

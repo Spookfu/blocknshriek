@@ -1,0 +1,1 @@
+summon zombie ~ ~ ~ {NoAI:1b,Silent:1b,Tags:[ghost],Invulnerable:1b,active_effects:[{id:invisibility,duration:100000000,amplifier:1,show_particles:0b}]}

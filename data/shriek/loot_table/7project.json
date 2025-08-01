@@ -63,10 +63,10 @@
                 "tag": "{project: 1, rune: 1}"
               },
               {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:hide_additional_tooltip": {}
-                }
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:trim": false
+              }
               }
             ]
           }

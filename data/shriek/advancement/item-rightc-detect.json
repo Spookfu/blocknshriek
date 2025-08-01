@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "using_item": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "using_item"
+    ]
+  ],
+  "rewards": {
+    "function": "shriek:gamehandler/right-clickers"
+  }
+}

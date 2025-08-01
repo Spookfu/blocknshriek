@@ -26,7 +26,9 @@ execute as @s[tag=jumping,tag=!sneaking,tag=!sprinting] run function shriek:game
 execute as @s[tag=sprinting,tag=sneaking] run function shriek:gamehandler/status/yellow
 execute as @s[tag=jumping,tag=sneaking, tag=!sprinting] run function shriek:gamehandler/status/green
 
-# Cooldown Helpers (Sprinting for more than 150cm)
+# Cooldown Helpers (Sprinting for more than 500cm)
+execute at @s[scores={sprint-time=1..},tag=!sprinting] run particle poof ~ ~ ~ 0 1 0 0 100 normal
+execute at @s[scores={sprint-time=1..},tag=!sprinting] run playsound minecraft:entity.armadillo.brush master @a ~ ~ ~ 1 0.1 1
 scoreboard players set @s[tag=!sprinting] sprint-time 0
-execute unless score @s shrieker-timer matches ..0 run execute as @s[scores={sprint-time=150..},tag=!sneaking] run function shriek:gamehandler/shrieker/reducers/sprinter
-scoreboard players set @s[scores={sprint-time=150..}] sprint-time 0
+execute unless score @s shrieker-cd matches ..0 run execute as @s[scores={sprint-time=499..},tag=!sneaking] run function shriek:gamehandler/shrieker/reducers/sprinter
+scoreboard players set @s[scores={sprint-time=500..}] sprint-time 0

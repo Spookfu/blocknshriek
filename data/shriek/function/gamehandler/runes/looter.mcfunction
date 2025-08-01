@@ -5,6 +5,7 @@ scoreboard players set @s flower_potsBreak-loot 0
 # Lootable Breaking Feedback
 execute at @s run playsound minecraft:block.amethyst_cluster.break master @a ~ ~ ~ 1 2 1
 execute at @s run playsound minecraft:block.decorated_pot.shatter master @a ~ ~ ~ 1 1 1
+execute at @s run playsound minecraft:block.respawn_anchor.charge master @a ~ ~ ~ 1 1 1 
 
 # Resets the score bck to 0
 scoreboard players set @s looting 0

@@ -12,3 +12,5 @@ execute if score @s heartbeat-timer matches 15.. run execute if items entity @s 
 
 # Continously removes one score/t from heartbeat-timer, unless it is equal to or below 0.
 execute unless score @s heartbeat-timer matches ..0 run scoreboard players remove @s heartbeat-timer 1
+
+

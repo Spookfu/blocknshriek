@@ -45,5 +45,5 @@ function shriek:gamehandler/hub/teaming
 
 # Resets Inventory
 clear @a
-give @a feather[custom_name='["",{"text":"Quick Step","italic":false}]',enchantment_glint_override=true,consumable={can_always_eat:1b,consume_seconds:0.2,animation:brush,sound:"minecraft:entity.pig.saddle",on_consume_effects:[{type:apply_effects,effects:[{id:speed,duration:2000,amplifier:1,show_icon:0b}]}],nutrition:1,saturation:1},use_cooldown={seconds:100}]
+give @a feather[item_name=["",{"text":"Quick Step","italic":false}],enchantment_glint_override=true,consumable={can_always_eat:1b,consume_seconds:0.2,animation:brush,sound:"minecraft:entity.pig.saddle",on_consume_effects:[{type:apply_effects,effects:[{id:speed,duration:2000,amplifier:1,show_icon:0b}]}],nutrition:1,saturation:1},use_cooldown={seconds:100}]
 schedule function shriek:gamehandler/end/endwinanim 4.5s
