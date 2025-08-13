@@ -56,13 +56,20 @@
     item replace entity @s hotbar.3 with minecraft:nether_star[item_name="",minecraft:enchantment_glint_override=false,minecraft:custom_data={left:1b,team:1b},custom_model_data={strings:["left"]},consumable={consume_seconds:0,sound:"item.spyglass.use",has_consume_particles:0b},use_cooldown={seconds:0.5}]
     item replace entity @s hotbar.5 with minecraft:nether_star[item_name="",minecraft:enchantment_glint_override=false,minecraft:custom_data={right:1b,team:1b},custom_model_data={strings:["right"]},consumable={consume_seconds:0,sound:"item.spyglass.use",has_consume_particles:0b},use_cooldown={seconds:0.5},]
 
-execute as @s[scores={teams-selection=1}] run function shriek:gamehandler/hub/teams/shared/checks-ss {"team":"Red","color":"red","text":"RED","score":"red"}
-execute as @s[scores={teams-selection=2}] run function shriek:gamehandler/hub/teams/shared/checks-ss {"team":"Orange","color":"#FC7546","text":"ORANGE","score":"orange"}
-execute as @s[scores={teams-selection=3}] run function shriek:gamehandler/hub/teams/shared/checks-ss {"team":"Yellow","color":"yellow","text":"YELLOW","score":"yellow"}
-execute as @s[scores={teams-selection=4}] run function shriek:gamehandler/hub/teams/shared/checks-ss {"team":"Green","color":"green","text":"GREEN","score":"green"}
-execute as @s[scores={teams-selection=5}] run function shriek:gamehandler/hub/teams/shared/checks-ss {"team":"Blue","color":"blue","text":"BLUE","score":"blue"}
-execute as @s[scores={teams-selection=6}] run function shriek:gamehandler/hub/teams/shared/checks-ss {"team":"Purple","color":"light_purple","text":"PURPLE","score":"purple"}
-execute as @s[scores={teams-selection=7}] run function shriek:gamehandler/hub/teams/shared/checks-ss {"team":"Spectators","color":"gray","text":"SPECTATORS","score":"spectators"}
+execute as @s[scores={teams-selection=1}] run function shriek:gamehandler/hub/teams/shared/selection-screen/checks-ss {"team":"Red","color":"red","text":"RED","score":"red"}
+execute as @s[scores={teams-selection=2}] run function shriek:gamehandler/hub/teams/shared/selection-screen/checks-ss {"team":"Orange","color":"#FC7546","text":"ORANGE","score":"orange"}
+execute as @s[scores={teams-selection=3}] run function shriek:gamehandler/hub/teams/shared/selection-screen/checks-ss {"team":"Yellow","color":"yellow","text":"YELLOW","score":"yellow"}
+execute as @s[scores={teams-selection=4}] run function shriek:gamehandler/hub/teams/shared/selection-screen/checks-ss {"team":"Green","color":"green","text":"GREEN","score":"green"}
+execute as @s[scores={teams-selection=5}] run function shriek:gamehandler/hub/teams/shared/selection-screen/checks-ss {"team":"Blue","color":"blue","text":"BLUE","score":"blue"}
+execute as @s[scores={teams-selection=6}] run function shriek:gamehandler/hub/teams/shared/selection-screen/checks-ss {"team":"Purple","color":"light_purple","text":"PURPLE","score":"purple"}
+execute as @s[scores={teams-selection=7}] run function shriek:gamehandler/hub/teams/shared/selection-screen/checks-ss {"team":"Spectators","color":"gray","text":"SPECTATORS","score":"spectators"}
+
+
+# Already: If in the team already, shown by the corresponding team tag.
+# Considering: If in corresponding considering team
+# Default: If not have tag, AND not in the team
+# Blocked: If team was full.
+
 
 # Menu Effects
 # execute as @e[tag=rotate,limit=1,type=block_display] run execute at @s run tp @s ~ ~ ~ ~5 ~10

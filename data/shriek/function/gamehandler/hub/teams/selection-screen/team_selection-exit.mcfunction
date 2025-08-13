@@ -51,7 +51,3 @@ tag @s remove Blue
 tag @s remove Purple
 tag @s remove Spectators
 tag @s remove considering
-
-
-
-## REDO SELECTION SCREEN W/ MACROS
