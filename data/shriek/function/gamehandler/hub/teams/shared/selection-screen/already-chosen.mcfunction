@@ -1,0 +1,1 @@
+$title @s[team=$(team)-Consider] actionbar ["",{"text":"ʏᴏᴜ'ʀᴇ ᴀʟʀᴇᴀᴅʏ ᴄᴏɴꜱɪᴅᴇʀɪɴɢ ᴛᴇᴀᴍ"},{"text":" $(text)","color":"$(color)","bold":true}]
