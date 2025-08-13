@@ -7,6 +7,5 @@ scoreboard players remove @a[scores={shrieker-cd=1..},tag=!hiding,tag=shrieked] 
 # Runs the schedule again in 1s
 execute if entity @a[scores={shrieker-cd=1..}] run schedule function shriek:gamehandler/shrieker/timing 1s
 
-
 # # If cooldown complete (shrieker-timer score of 0 or less), run the returner function.
 execute as @a[scores={shrieker-cd=..0},tag=shrieked] run function shriek:gamehandler/shrieker/returner

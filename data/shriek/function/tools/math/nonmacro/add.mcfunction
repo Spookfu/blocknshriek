@@ -1,0 +1,1 @@
+execute run return run scoreboard players operation val1 math += val2 math

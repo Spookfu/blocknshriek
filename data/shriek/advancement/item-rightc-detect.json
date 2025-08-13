@@ -11,6 +11,6 @@
     ]
   ],
   "rewards": {
-    "function": "shriek:gamehandler/right-clickers"
+    "function": "shriek:gamehandler/shared/right-clickers"
   }
 }

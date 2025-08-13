@@ -1,21 +1,13 @@
 # Text Buffer
-tellraw @a " "
-tellraw @a " "
-tellraw @a " "
-tellraw @a " "
-tellraw @a " "
-tellraw @a " "
-tellraw @a " "
-tellraw @a " "
-tellraw @a " "
-tellraw @a " "
+function shriek:gamehandler/shared/text-buffer
 
 # Requirement Fail
-execute if score map gameHandler matches ..0 run return run function shriek:gamehandler/start/reqfail
-execute if score total teams matches ..1 run return run function shriek:gamehandler/start/reqfail
+# execute run return run execute if score map gameHandler matches ..0 run return run function shriek:gamehandler/start/reqfail
+# execute run return run execute if score activePlayers teams matches ..1 run return run function shriek:gamehandler/start/reqfail
 
 # Requirement Pass
 function shriek:gamehandler/start/startanim
+
 tellraw @a {"text":" ꜱᴛᴀʀᴛɪɴɢ ɢᴀᴍᴇ . . .","color":"gray"}
 tellraw @a " "
 tellraw @a " "

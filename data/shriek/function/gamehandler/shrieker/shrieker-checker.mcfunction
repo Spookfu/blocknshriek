@@ -1,6 +1,6 @@
 # # Shrieker Inventory Preventors
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{shrieker:1}}}}]
-clear @s[nbt=!{Inventory:[{count:1,Slot:4b, components:{"minecraft:custom_data":{shrieker:1}}}]},tag=Players] crossbow
+clear @s[nbt=!{Inventory:[{count:1,Slot:4b, components:{"minecraft:custom_data":{shrieker:1}}}]},team=!Spectators] crossbow
 kill @e[type=minecraft:spectral_arrow,nbt={inGround:1b}]
 
 # Shrieker Cooldown Visual Updater

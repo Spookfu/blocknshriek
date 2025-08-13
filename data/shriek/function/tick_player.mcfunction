@@ -1,1 +1,0 @@
-function shriek:gamehandler/ray/cast

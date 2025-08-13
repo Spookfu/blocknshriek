@@ -2,14 +2,21 @@
     "criteria": {
         "requirement": {
             "trigger": "player_interacted_with_entity",
-            "conditions": {
-                "entity": {
-                    "type": "interaction",
-                    "team": "teamers"
-                }
+      "conditions": {
+        "player": {
+          "stepping_on": {
+            "block": {
+              "blocks": "minecraft:deepslate_tiles"
             }
+          }
+        },
+        "entity": {
+          "type": "minecraft:interaction",
+          "team": "teamers"
         }
-    }, "rewards": {
-        "function": "shriek:gamehandler/hub/teaming"
+      }
+    }
+  }, "rewards": {
+        "function": "shriek:gamehandler/hub/teams/teaming"
     }
 }
