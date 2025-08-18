@@ -27,5 +27,4 @@ advancement revoke @s only shriek:item-rightc-detect
     execute if score @s team-selection matches 5 run title @s title {"text":"\uE0012"}
     execute if score @s team-selection matches 6 run title @s title {"text":"\uE0013"}
     execute if score @s team-selection matches 7 run title @s title {"text":"\uE007"}
-
-
+say Selection-Menu_NOTIF

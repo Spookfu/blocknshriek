@@ -3,7 +3,8 @@ playsound minecraft:ui.cartography_table.take_result master @s ~ ~ ~ 0.2 0.1 0.1
 execute at @s run particle minecraft:poof ~ ~ ~ 0 1 0 1 50 normal
 
 effect give @s glowing infinite 1 true
-say select
+say Selected_NOTIF
+advancement revoke @s only shriek:item-rightc-detect
 # # # Temp Cache
     # # Already On Team
         # execute if entity @s[nbt={SelectedItem:{id:"minecraft:white_dye",count:1,components:{"minecraft:custom_model_data":{strings:["red-already"]}}}}] run team join Red-Consider

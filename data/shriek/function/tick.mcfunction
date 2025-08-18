@@ -1,12 +1,13 @@
 # Keeps all the Handlers continously running as long as the game is active.
     execute if score game gameHandler matches 1 run function shriek:gamehandler/baser
-    # say h
+
 # Hub Stuff
     execute if block -14 -60 54 minecraft:oak_button[powered=true] run function shriek:gamehandler/start/reqcheck
+    execute as @a run function shriek:gamehandler/hub/team_iden
 
 # Team Selection Screen
-    execute as @a[x=-14,y=-59,z=66,distance=..1] run function shriek:gamehandler/hub/teams/selection-screen/team_selection
-    execute as @a[x=-14,y=-59,z=66,distance=1..,tag=selecting_team] run function shriek:gamehandler/hub/teams/selection-screen/team_selection-exit
+    execute as @a[x=-14,y=-59,z=66,distance=..1] run function shriek:gamehandler/hub/teams/selection-screen/base
+    execute as @a[x=-14,y=-59,z=66,distance=1..,tag=teaming_entry] run function shriek:gamehandler/hub/teams/selection-screen/exit
 
 
 #Triggers

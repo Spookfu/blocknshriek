@@ -1,6 +1,6 @@
 # Resets Player
 stopsound @s
-tag @s remove selecting_team
+tag @s remove teaming_entry
 effect clear @s blindness
 effect clear @s darkness
 effect clear @s slowness
@@ -9,7 +9,7 @@ clear @s white_dye
 title @s clear
 title @s times 0t 10t 4t
 
-title @a title EXIT
+title @a title Exit-Screen_NOTIF
 # title @a actionbar {"text":"ᴛᴇᴀᴍ ᴡᴀꜱ ɴᴏᴛ ᴄʜᴀɴɢᴇᴅ"}
 
 # execute at @s[tag=considering] run particle totem_of_undying ~ ~ ~ 0 0 0 1 100 normal
