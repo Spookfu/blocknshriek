@@ -1,6 +1,6 @@
 # Keeps all the Handlers continously running as long as the game is active.
     execute if score game gameHandler matches 1 run function shriek:gamehandler/baser
-    # say h
+
 # Hub Stuff
     execute if block -14 -60 54 minecraft:oak_button[powered=true] run function shriek:gamehandler/start/reqcheck
 
