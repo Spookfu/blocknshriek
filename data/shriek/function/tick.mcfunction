@@ -4,10 +4,14 @@
 # Hub Stuff
     execute if block -14 -60 54 minecraft:oak_button[powered=true] run function shriek:gamehandler/start/reqcheck
 
-# Team Selection Screen
-    execute as @a[x=-14,y=-59,z=66,distance=..1] run function shriek:gamehandler/hub/teams/selection-screen/team_selection
-    execute as @a[x=-14,y=-59,z=66,distance=1..,tag=selecting_team] run function shriek:gamehandler/hub/teams/selection-screen/team_selection-exit
+# Map Selection Screen
+execute as @a[x=-19.5,y=-59.5,z=40.5,distance=..4] run function shriek:gamehandler/hub/maps/map1
+execute as @a[x=-13.5,y=-59.5,z=40.5,distance=..4] run function shriek:gamehandler/hub/maps/map2
+execute as @a[x=-7.5,y=-59.5,z=40.5,distance=..4] run function shriek:gamehandler/hub/maps/map3
 
+particle minecraft:end_rod -19.50 -60.00 43.50 0.2 1 0.2 0 1 normal
+particle minecraft:end_rod -13.50 -60.00 43.50 0.2 1 0.2 0 1 normal
+particle minecraft:end_rod -7.50 -60.00 43.50 0.2 1 0.2 0 1 normal
 
 #Triggers
     execute as @a[scores={shriek.end=1..}] run function shriek:triggers/helper.end
