@@ -5,13 +5,18 @@
     execute if block -14 -60 54 minecraft:oak_button[powered=true] run function shriek:gamehandler/start/reqcheck
 
 # Map Selection Screen
-execute as @a[x=-19.5,y=-59.5,z=40.5,distance=..4] run function shriek:gamehandler/hub/maps/map1
-execute as @a[x=-13.5,y=-59.5,z=40.5,distance=..4] run function shriek:gamehandler/hub/maps/map2
-execute as @a[x=-7.5,y=-59.5,z=40.5,distance=..4] run function shriek:gamehandler/hub/maps/map3
+execute as @a[x=-21.5,y=-59.5,z=36.8,dx=5,dy=4,dz=5.5] run function shriek:gamehandler/hub/maps/map1
+execute as @a[x=-16.5,y=-59.5,z=36.8,dx=5,dy=4,dz=5.5] run function shriek:gamehandler/hub/maps/map2
+execute as @a[x=-10.5,y=-59.5,z=36.8,dx=5,dy=4,dz=5.5] run function shriek:gamehandler/hub/maps/map3
 
-particle minecraft:end_rod -19.50 -60.00 43.50 0.2 1 0.2 0 1 normal
-particle minecraft:end_rod -13.50 -60.00 43.50 0.2 1 0.2 0 1 normal
-particle minecraft:end_rod -7.50 -60.00 43.50 0.2 1 0.2 0 1 normal
+execute as @a[x=-21.5, y=-60, z=44.5,dx=16,tag=map] run function shriek:gamehandler/hub/maps/exit
+
+title @a[tag=chosen_sculk] actionbar [{"text":"ᴍᴀᴘ ꜱᴇʟᴇᴄᴛᴇᴅ"},{"text":" SCULKED INSTITUTE","color":"dark_aqua","bold":true}]
+title @a[tag=chosen_stalking] actionbar [{"text":"ᴍᴀᴘ ꜱᴇʟᴇᴄᴛᴇᴅ"},{"text":" STALKING FOREST","color":"gray","bold":true}]
+title @a[tag=chosen_dungeon] actionbar [{"text":"ᴍᴀᴘ ꜱᴇʟᴇᴄᴛᴇᴅ"},{"text":" CREAKING CRYPTS","color":"red","bold":true}]
+title @a[tag=!chosen_dungeon,tag=!chosen_stalking,tag=!chosen_sculk] actionbar [{"text":"- ᴠᴏᴛᴇ ꜰᴏʀ ᴀ ᴍᴀᴘ -"}]
+# function shriek:gamehandler/hub/team_iden
+
 
 #Triggers
     execute as @a[scores={shriek.end=1..}] run function shriek:triggers/helper.end

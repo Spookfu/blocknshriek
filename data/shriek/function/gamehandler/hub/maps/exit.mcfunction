@@ -1,0 +1,8 @@
+stopsound @s * block.beacon.activate
+stopsound @s * block.amethyst_block.resonate
+tag @s remove map
+tag @s remove map_dungeon
+tag @s remove map_stalking
+tag @s remove map_sculk
+clear @s white_dye
+playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 1 0.1 1
