@@ -1,4 +1,4 @@
-playsound block.trial_spawner.eject_item master @s ~ ~ ~ 1 2 1
+playsound block.trial_spawner.eject_item master @s[tag=map] ~ ~ ~ 1 2 1
 execute store result score sculk mapVoting run execute if entity @a[tag=chosen_sculk]
 execute store result score stalking mapVoting run execute if entity @a[tag=chosen_stalking]
 execute store result score dungeon mapVoting run execute if entity @a[tag=chosen_dungeon]

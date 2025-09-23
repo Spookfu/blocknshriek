@@ -32,4 +32,5 @@ execute store result score spectators teams run team list Spectators
 execute store result score totalPlayers teams run list
 execute store result score activePlayers teams run scoreboard players operation totalPlayers teams -= spectators teams 
 
+function shriek:gamehandler/hub/maps/updater
 function shriek:gamehandler/hub/teams/updater

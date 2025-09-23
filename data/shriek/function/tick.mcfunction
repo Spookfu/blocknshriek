@@ -11,12 +11,7 @@ execute as @a[x=-10.5,y=-59.5,z=36.8,dx=5,dy=4,dz=5.5] run function shriek:gameh
 
 execute as @a[x=-21.5, y=-60, z=44.5,dx=16,tag=map] run function shriek:gamehandler/hub/maps/exit
 
-title @a[tag=chosen_sculk] actionbar [{"text":"ᴍᴀᴘ ꜱᴇʟᴇᴄᴛᴇᴅ"},{"text":" SCULKED INSTITUTE","color":"dark_aqua","bold":true}]
-title @a[tag=chosen_stalking] actionbar [{"text":"ᴍᴀᴘ ꜱᴇʟᴇᴄᴛᴇᴅ"},{"text":" STALKING FOREST","color":"gray","bold":true}]
-title @a[tag=chosen_dungeon] actionbar [{"text":"ᴍᴀᴘ ꜱᴇʟᴇᴄᴛᴇᴅ"},{"text":" CREAKING CRYPTS","color":"red","bold":true}]
-title @a[tag=!chosen_dungeon,tag=!chosen_stalking,tag=!chosen_sculk] actionbar [{"text":"- ᴠᴏᴛᴇ ꜰᴏʀ ᴀ ᴍᴀᴘ -"}]
-# function shriek:gamehandler/hub/team_iden
-
+execute as @a run function shriek:gamehandler/hub/team_iden
 
 #Triggers
     execute as @a[scores={shriek.end=1..}] run function shriek:triggers/helper.end
