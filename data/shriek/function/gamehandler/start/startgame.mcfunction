@@ -10,5 +10,4 @@ effect give @s minecraft:blindness infinite 1 true
 playsound minecraft:block.trial_spawner.about_to_spawn_item master @s ~ ~ ~ 1 1 1
 
 # Runs TP and Setup Function in 2.1s
-schedule function shriek:gamehandler/start/intial/playersetup 2.1s
-
+schedule function shriek:gamehandler/start/playersetup 2.1s

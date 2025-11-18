@@ -6,3 +6,5 @@ tag @s remove map_stalking
 tag @s remove map_sculk
 clear @s white_dye
 playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 1 0.1 1
+execute as @s run function shriek:gamehandler/hub/team_iden
+function shriek:gamehandler/hub/maps/updater

@@ -1,12 +1,20 @@
-# Text Buffer
 function shriek:gamehandler/shared/text-buffer
+scoreboard players set game gameHandler 0
+execute if score activePlayers teams matches ..0 run scoreboard players set game gameHandler -1
+execute if score activePlayers teams matches ..0 run tellraw @a ["",{"text":" NOT ENOUGH PLAYERS.","color":"red","bold":true},{"text":" At least two players are needed."}]
 
-# Requirement Fail
-# execute run return run execute if score map gameHandler matches ..0 run return run function shriek:gamehandler/start/reqfail
-# execute run return run execute if score activePlayers teams matches ..1 run return run function shriek:gamehandler/start/reqfail
+execute if score activePlayers teams matches 1 run scoreboard players set game gameHandler -1
+execute if score activePlayers teams matches 1 run tellraw @a ["",{"text":" NOT ENOUGH PLAYERS.","color":"red","bold":true},{"text":" At least one more player is needed!"}]
 
-# Requirement Pass
-function shriek:gamehandler/start/startanim
+execute if score total mapVoting matches 0 run scoreboard players set game gameHandler -1
+execute if score total mapVoting matches 0 run tellraw @a ["",{"text":" CHOOSE A MAP FIRST.","color":"red","bold":true},{"text":" At least one person must vote for a map!"}]
+
+execute as @a at @a run playsound minecraft:entity.villager.no master @s ~ ~ ~ 1 1 1
+
+execute if score game gameHandler matches -1 run return run setblock -14 -60 54 minecraft:oak_button[powered=false,face=floor]
+
+setblock -14 -60 54 minecraft:pale_oak_button[powered=false,face=floor]
+title @a times 0t 10t 10s
 
 tellraw @a {"text":" ꜱᴛᴀʀᴛɪɴɢ ɢᴀᴍᴇ . . .","color":"gray"}
 tellraw @a " "
@@ -20,3 +28,4 @@ execute unless score purple teams matches 0 run tellraw @a [{"text":"Team Purple
 
 tellraw @a [{"text":"Spectators ","color":"gray"},{"text":"| ","color":"gray"},{"selector":"@a[team=Spectators]"}]
 
+function shriek:gamehandler/start/display-map/title

@@ -1,3 +1,6 @@
+execute as @s run function shriek:gamehandler/hub/team_iden
+
+
 ## Teams
 # Empty Teams
 execute if score red teams matches 0 run data modify entity @e[limit=1,type=text_display,tag=teamRed] text set value [{"text":"Team Red","color":"red"},{"text":"\n"},{"text":"❌ ᴇᴍᴘᴛʏ","color":"red","bold":true}]

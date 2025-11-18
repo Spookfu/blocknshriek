@@ -1,3 +1,5 @@
+# This function processes the inputted string ($(string)) for the typewriter tool. It sets up necessary data and determines the processing method based on the specified type ($(type)).
+
 # Feedback
 $title @s actionbar [{"text":"Inputted String","color":"gray","bold":true},{"text":" | ","color":"white","bold":false},{"text":"$(string)","color":"blue","bold":false}]
 
