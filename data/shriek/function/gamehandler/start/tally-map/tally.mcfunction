@@ -1,3 +1,4 @@
+execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function start/tally-map/tally.mcfunction","color":"white","bold":false}]
 execute if score sculk mapVoting > none mapVoting run execute if score sculk mapVoting > stalking mapVoting run scoreboard players set win mapVoting 1
 execute if score sculk mapVoting > none mapVoting run execute if score sculk mapVoting > stalking mapVoting run scoreboard players set win mapVoting 1
 execute if score stalking mapVoting > none mapVoting run execute if score stalking mapVoting > sculk mapVoting run scoreboard players set win mapVoting 2

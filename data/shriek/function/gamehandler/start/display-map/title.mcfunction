@@ -1,3 +1,7 @@
+# Debug
+execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function start/display-map/title.mcfunction","color":"white","bold":false}]
+
+# Start Title Animation cycle
 scoreboard players add mapFinalizing animate 1
 
 execute if score mapFinalizing animate matches 1 run title @a title {"text":"ZI","color":"green"}
@@ -18,6 +22,7 @@ execute if score mapFinalizing animate matches 14 run title @a subtitle {"text":
 
 execute at @a as @a run playsound minecraft:block.piston.extend master @s ~ ~ ~ 1 1 1
 
+# Run after Title Animation Cycle completes
 execute unless score mapFinalizing animate matches 14 run return run schedule function shriek:gamehandler/start/display-map/title 2t
 scoreboard players set mapFinalizing animate 0
 

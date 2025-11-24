@@ -1,3 +1,4 @@
+execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function start/playersetup.mcfunction","color":"white","bold":false}]
 scoreboard players set dungeon mapVoting 0
 scoreboard players set stalking mapVoting 0
 scoreboard players set sculk mapVoting 0

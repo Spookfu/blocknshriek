@@ -2,7 +2,7 @@
     execute if score game gameHandler matches 1 run function shriek:gamehandler/baser
 
 # Hub Stuff
-    execute if block -14 -60 54 minecraft:oak_button[powered=true] run function shriek:gamehandler/start/reqcheck
+    execute if block -14 -60 54 minecraft:oak_button[powered=true] run execute as @a run function shriek:gamehandler/start/reqcheck
 
 # Map Selection Screen
 execute as @a[x=-21.5,y=-59.5,z=36.8,dx=5,dy=4,dz=5.5] run function shriek:gamehandler/hub/maps/sculk

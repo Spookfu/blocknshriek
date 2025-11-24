@@ -1,3 +1,4 @@
+execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/maps/updater.mcfunction","color":"white","bold":false}]
 playsound block.trial_spawner.eject_item master @s[tag=map] ~ ~ ~ 1 2 1
 execute store result score sculk mapVoting run execute if entity @a[tag=chosen_sculk]
 execute store result score stalking mapVoting run execute if entity @a[tag=chosen_stalking]

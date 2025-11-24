@@ -1,3 +1,4 @@
+execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function shared/text-buffer.mcfunction","color":"white"}] 
 tellraw @a " "
 tellraw @a " "
 tellraw @a " "

@@ -1,3 +1,4 @@
+execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/maps/exit.mcfunction","color":"white","bold":false}]
 stopsound @s * block.beacon.activate
 stopsound @s * block.amethyst_block.resonate
 tag @s remove map
