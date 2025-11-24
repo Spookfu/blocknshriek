@@ -1,4 +1,6 @@
+# Debug
 execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/maps/sculk.mcfunction","color":"white","bold":false}]
+
 playsound minecraft:entity.warden.listening_angry master @s[tag=!map] ~ ~ ~ 1 0.1 1
 tag @s add map_sculk
 execute if entity @s[tag=!map] run function shriek:gamehandler/hub/maps/base

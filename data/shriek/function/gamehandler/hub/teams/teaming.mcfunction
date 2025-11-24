@@ -1,3 +1,6 @@
+# Debug
+execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/teams/teaming.mcfunction","color":"white","bold":false}]
+
 # Team Selection Functions
 advancement revoke @s only shriek:teams-rightc
 

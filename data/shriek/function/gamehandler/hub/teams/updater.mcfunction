@@ -1,5 +1,7 @@
-execute as @s run function shriek:gamehandler/hub/team_iden
+# Debug
+execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/teams/updater/join.mcfunction","color":"white","bold":false}]
 
+execute as @s run function shriek:gamehandler/hub/team_iden
 
 ## Teams
 # Empty Teams
