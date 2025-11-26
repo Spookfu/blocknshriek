@@ -1,7 +1,7 @@
 # Debug Functiomn
 execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function start/reqcheck.mcfunction","color":"white","bold":false}]
 
-function shriek:gamehandler/shared/text-buffer
+title @a times 0t 5s 2t
 
 # Check if conditions are right to start the game.
 scoreboard players set game gameHandler 0

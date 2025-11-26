@@ -4,13 +4,13 @@ execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]"
 # Start Title Animation cycle
 scoreboard players add mapFinalizing animate 1
 
-execute if score mapFinalizing animate matches 1 run title @a title {"text":"ZI","color":"green"}
-execute if score mapFinalizing animate matches 2 run title @a title {"text":"IZIN","color":"green"}
-execute if score mapFinalizing animate matches 3 run title @a title {"text":"LIZING","color":"green"}
-execute if score mapFinalizing animate matches 4 run title @a title {"text":"ALIZING ","color":"green"}
-execute if score mapFinalizing animate matches 5 run title @a title {"text":"NALIZING M","color":"green"}
-execute if score mapFinalizing animate matches 6 run title @a title {"text":"INALIZING MA ","color":"green"}
-execute if score mapFinalizing animate matches 7 run title @a title {"text":"FINALIZING MAP","color":"green"}
+execute if score mapFinalizing animate matches 1 run title @a title {"text":"ZI","color":"green","bold":true}
+execute if score mapFinalizing animate matches 2 run title @a title {"text":"IZIN","color":"green","bold":true}
+execute if score mapFinalizing animate matches 3 run title @a title {"text":"LIZING","color":"green","bold":true}
+execute if score mapFinalizing animate matches 4 run title @a title {"text":"ALIZING ","color":"green","bold":true}
+execute if score mapFinalizing animate matches 5 run title @a title {"text":"NALIZING M","color":"green","bold":true}
+execute if score mapFinalizing animate matches 6 run title @a title {"text":"INALIZING MA ","color":"green","bold":true}
+execute if score mapFinalizing animate matches 7 run title @a title {"text":"FINALIZING MAP","color":"green","bold":true}
 
 execute if score mapFinalizing animate matches 8 run title @a subtitle {"text":"ᴡ","color":"gray"}
 execute if score mapFinalizing animate matches 9 run title @a subtitle {"text":"ᴇ ᴡᴀ","color":"gray"}

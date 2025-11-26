@@ -1,19 +1,20 @@
 execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function start/tally-map/tally.mcfunction","color":"white","bold":false}]
-execute if score sculk mapVoting > none mapVoting run execute if score sculk mapVoting > stalking mapVoting run scoreboard players set win mapVoting 1
-execute if score sculk mapVoting > none mapVoting run execute if score sculk mapVoting > stalking mapVoting run scoreboard players set win mapVoting 1
-execute if score stalking mapVoting > none mapVoting run execute if score stalking mapVoting > sculk mapVoting run scoreboard players set win mapVoting 2
-execute if score stalking mapVoting > none mapVoting run execute if score stalking mapVoting > dungeon mapVoting run scoreboard players set win mapVoting 2
-execute if score scdungeonulk mapVoting > none mapVoting run execute if score dungeon mapVoting > sculk mapVoting run scoreboard players set win mapVoting 3
-execute if score dungeon mapVoting > none mapVoting run execute if score dungeon mapVoting > sculk mapVoting run scoreboard players set win mapVoting 3
 
-execute if score sculk mapVoting > none mapVoting run execute if score sculk mapVoting = stalking mapVoting run scoreboard players set win mapVoting 4
-execute if score sculk mapVoting > none mapVoting run execute if score sculk mapVoting = dungeon mapVoting run scoreboard players set win mapVoting 5
-execute if score stalking mapVoting > none mapVoting run execute if score stalking mapVoting = dungeon mapVoting run scoreboard players set win mapVoting 6
+execute if score sculk mapVoting = stalking mapVoting run scoreboard players set win mapVoting 4
+execute if score sculk mapVoting = dungeon mapVoting run scoreboard players set win mapVoting 5
+execute if score stalking mapVoting = dungeon mapVoting run scoreboard players set win mapVoting 6
+
+execute if score sculk mapVoting = stalking mapVoting if score stalking mapVoting = dungeon mapVoting run scoreboard players set win mapVoting 7
+
+execute if score sculk mapVoting > stalking mapVoting if score sculk mapVoting > dungeon mapVoting run scoreboard players set win mapVoting 1
+execute if score dungeon mapVoting > stalking mapVoting if score dungeon mapVoting > sculk mapVoting run scoreboard players set win mapVoting 3
+execute if score stalking mapVoting > dungeon mapVoting if score stalking mapVoting > sculk mapVoting run scoreboard players set win mapVoting 2
 
 execute if score win mapVoting > base mapVoting run title @a title [{"text":"MAP VOTING TIED","color":"red","bold":true}]
 execute if score win mapVoting matches 4 run title @a subtitle {"text":"Sculk Institute vs Stalking Forest","color":"gray","bold":false}
 execute if score win mapVoting matches 5 run title @a subtitle {"text":"Sculk Institute vs Creaking Crypts","color":"gray","bold":false}
 execute if score win mapVoting matches 6 run title @a subtitle {"text":"Stalking Forest vs Creaking Crypts","color":"gray","bold":false}
+execute if score win mapVoting matches 7 run title @a subtitle {"text":"Sculk Institute vs Stalking Forest vs Creaking Crypts","color":"gray","bold":false}
 
 execute if score win mapVoting <= base mapVoting run title @a title {"text":"Chosen Map","color":"green","bold":true}
 execute if score win mapVoting matches 1 run title @a subtitle {"text":"Sculk Institute","color":"dark_aqua","bold":false}

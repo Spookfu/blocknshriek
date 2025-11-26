@@ -4,6 +4,11 @@ execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]"
 # Pre-caution to stop Duel-Music. (Plan to make Custom)
 stopsound @a * music_disc.precipice
 
+# Map Tag Removals
+tag @a remove chosen_dungeon
+tag @a remove chosen_sculk
+tag @a remove chosen_stalking
+
 # Start Title Animation cycle
 scoreboard players add start animate 1
 
@@ -36,6 +41,7 @@ execute at @a run playsound minecraft:block.piston.contract master @a ~ ~ ~ 1 2 
 # Run after Animation Cycle completes
 execute unless score start animate matches 22 run return run schedule function shriek:gamehandler/start/display-game/title 2t
 scoreboard players set start animate 0
+
 
 # Runs Countdown Cycle to start Game.
 scoreboard players set startCountdown animate 5

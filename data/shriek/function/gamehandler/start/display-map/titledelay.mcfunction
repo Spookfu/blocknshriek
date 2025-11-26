@@ -4,7 +4,7 @@ execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]"
 # Start Title Animation cycle.
 scoreboard players add mapFinalizing-2 animate 1
 
-title @a title {"text":"FINALIZING MAP","color":"green"}
+title @a title {"text":"FINALIZING MAP","color":"green","bold":true}
 execute if score mapFinalizing-2 animate matches 1 run title @a subtitle {"text":"ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ.","color":"gray"}
 execute if score mapFinalizing-2 animate matches 2 run title @a subtitle {"text":"ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ..","color":"gray"}
 execute if score mapFinalizing-2 animate matches 3 run title @a subtitle {"text":"ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...","color":"gray"}
