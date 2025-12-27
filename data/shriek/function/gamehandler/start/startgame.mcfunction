@@ -15,7 +15,7 @@ execute unless score purple teams matches 0 run tellraw @a [{"text":"Team Purple
 tellraw @a [{"text":"Spectators ","color":"gray"},{"text":"| ","color":"gray"},{"selector":"@a[team=Spectators]"}]
 # Last Title
 title @a subtitle ["",{"text":"> ","color":"blue","bold":true},{"text":"ɢᴏᴏᴅ ʟᴜᴄᴋ","color": "white"},{"text":" <","color":"red","bold":true}]
-title @a title {"text":"SHRIEK","color":"dark_red"}
+title @a title {"text":"SHRIEK","color":"dark_red","bold":true}
 
 # Game Starting FX
 execute at @s run particle minecraft:ominous_spawning ~ ~1 ~ 0 0 0 1 100 normal

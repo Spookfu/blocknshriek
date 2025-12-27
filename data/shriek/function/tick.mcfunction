@@ -7,7 +7,7 @@
 # Map Selection Screen
 execute as @a[x=-21.5,y=-59.5,z=36.8,dx=5,dy=4,dz=5.5] run function shriek:gamehandler/hub/maps/sculk
 execute as @a[x=-16.5,y=-59.5,z=36.8,dx=5,dy=4,dz=5.5] run function shriek:gamehandler/hub/maps/stalking
-execute as @a[x=-10.5,y=-59.5,z=36.8,dx=5,dy=4,dz=5.5] run function shriek:gamehandler/hub/maps/dungeon
+execute as @a[x=-10.5,y=-59.5,z=36.8,dx=5,dy=4,dz=5.5] run function shriek:gamehandler/hub/maps/crypt
 
 title @a[tag=.mapChosenIsSculk,tag=!mapSelectionVisualPause] actionbar [{"text":"Selected -"},{"text":" Sᴄᴜʟᴋᴇᴅ Iɴꜱᴛɪᴛᴜᴛᴇ","color":"aqua"}]
 title @a[tag=.mapChosenIsStalking,tag=!mapSelectionVisualPause] actionbar [{"text":"Selected -"},{"text":" Sᴛᴀʟᴋɪɴɢ Fᴏʀᴇꜱᴛ","color":"gray"}]

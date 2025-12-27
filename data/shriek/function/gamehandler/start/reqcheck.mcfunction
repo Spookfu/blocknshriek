@@ -1,7 +1,7 @@
 # Debug Functiomn
 execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function start/reqcheck.mcfunction","color":"white","bold":false}]
 
-title @a times 0t 5s 2t
+title @a times 0s 3s 10t
 
 # Check if conditions are right to start the game.
 scoreboard players set game gameHandler 0

@@ -4,10 +4,11 @@ execute if score .functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]
 stopsound @s * block.beacon.activate
 stopsound @s * block.amethyst_block.resonate
 tag @s remove .mapConsideringBase
-tag @s remove .mapConsideringDungeon
+tag @s remove .mapConsideringCrypt
 tag @s remove .mapConsideringStalking
 tag @s remove .mapConsideringSculk
 clear @s white_dye
 playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 0.1 1
 execute as @s run function shriek:gamehandler/hub/team_iden
 function shriek:gamehandler/hub/maps/updater
+
