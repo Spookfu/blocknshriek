@@ -1,7 +1,10 @@
 # Debug
-execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/teams/updater/join.mcfunction","color":"white","bold":false}]
+execute if score .functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/teams/updater/join.mcfunction","color":"white","bold":false}]
 
 execute as @s run function shriek:gamehandler/hub/team_iden
+
+tag @s add .mapSelectionVisualPause
+execute as @s run schedule function shriek:gamehandler/hub/teams/visualpause 2s
 
 ## Teams
 # Empty Teams
@@ -37,5 +40,7 @@ execute store result score spectators teams run team list Spectators
 execute store result score totalPlayers teams run list
 execute store result score activePlayers teams run scoreboard players operation totalPlayers teams -= spectators teams 
 
+
 function shriek:gamehandler/hub/maps/updater
 function shriek:gamehandler/hub/teams/updater
+

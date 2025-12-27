@@ -1,9 +1,9 @@
 # Debug
-execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/maps/stalking.mcfunction","color":"white","bold":false}]
+execute if score .functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/maps/stalking.mcfunction","color":"white","bold":false}]
 
-playsound minecraft:entity.creaking.death master @s[tag=!map] ~ ~ ~ 1 0.1 1
-execute if entity @s[tag=!map] run function shriek:gamehandler/hub/maps/base
-tag @s add map_stalking
+playsound minecraft:entity.creaking.death master @s[tag=!.mapConsideringBase] ~ ~ ~ 1 0.1 1
+execute if entity @s[tag=!.mapConsideringBase] run function shriek:gamehandler/hub/maps/base
+tag @s add .mapConsideringStalking
 title @s title {"text":"STALKING FOREST","color":"gray","bold":true}
 title @s subtitle "ʀɪɢʜᴛ ᴄʟɪᴄᴋ \ue007 ᴛᴏ ᴠᴏᴛᴇ ꜰᴏʀ"
 

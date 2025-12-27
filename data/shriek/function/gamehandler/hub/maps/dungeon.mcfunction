@@ -1,9 +1,9 @@
 # Debug
-execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/maps/dungeon.mcfunction","color":"white","bold":false}]
+execute if score .functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/maps/dungeon.mcfunction","color":"white","bold":false}]
 
-playsound minecraft:block.trial_spawner.ambient_ominous master @s[tag=!map] ~ ~ ~ 1 0.1 1
-tag @s add map_dungeon
-execute if entity @s[tag=!map] run function shriek:gamehandler/hub/maps/base
+playsound minecraft:block.trial_spawner.ambient_ominous master @s[tag=!.mapConsideringBase] ~ ~ ~ 1 0.1 1
+tag @s add .mapConsideringDungeon
+execute if entity @s[tag=!.mapConsideringBase] run function shriek:gamehandler/hub/maps/base
 title @s title {"text":"CREAKING CRYPTS","color":"red","bold":true}
 title @s subtitle "ʀɪɢʜᴛ ᴄʟɪᴄᴋ \ue007 ᴛᴏ ᴠᴏᴛᴇ ꜰᴏʀ"
 

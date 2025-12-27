@@ -1,5 +1,5 @@
 # Debug
-execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/team-iden.mcfunction","color":"white","bold":false}]
+execute if score .functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/team-iden.mcfunction","color":"white","bold":false}]
 
 # Assign Team Identifier in Offhand
     clear @s[nbt=!{equipment:{offhand:{components:{"minecraft:custom_data":{team:1b}}}}}] white_dye
