@@ -12,3 +12,4 @@ playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 0.1 1
 execute as @s run function shriek:gamehandler/hub/team_iden
 function shriek:gamehandler/hub/maps/updater
 
+item replace entity @s armor.head with air

@@ -13,6 +13,8 @@ title @a[tag=.mapChosenIsSculk,tag=!mapSelectionVisualPause] actionbar [{"text":
 title @a[tag=.mapChosenIsStalking,tag=!mapSelectionVisualPause] actionbar [{"text":"Selected -"},{"text":" Sᴛᴀʟᴋɪɴɢ Fᴏʀᴇꜱᴛ","color":"gray"}]
 title @a[tag=.mapChosenIsCrypt,tag=!mapSelectionVisualPause] actionbar [{"text":"Selected -"},{"text":" Cʀᴇᴀᴋɪɴɢ Cʀʏᴘᴛꜱ","color":"red"}]
 
+execute if score game gameHandler matches 0 run execute as @a run function shriek:gamehandler/hub/team_iden
+
 execute as @a[x=-21.5, y=-60, z=44.5,dx=16,tag=.mapConsideringBase] run function shriek:gamehandler/hub/maps/exit
 
 execute if entity @a[scores={mapKills=1}] run function shriek:gamehandler/start/fight-map/victory

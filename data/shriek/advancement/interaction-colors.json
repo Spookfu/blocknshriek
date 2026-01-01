@@ -12,11 +12,11 @@
         },
         "entity": {
           "type": "minecraft:interaction",
-          "team": "teamers"
+          "team": "colormappers"
         }
       }
     }
   }, "rewards": {
-        "function": "shriek:gamehandler/hub/teams/teaming"
+        "function": "shriek:gamehandler/hub/colors/mapping"
     }
 }

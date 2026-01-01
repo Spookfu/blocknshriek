@@ -2,7 +2,7 @@
 execute if score functionDebug debug matches 1 run tellraw @a [{"text":"[DEBUG]","color":"blue","bold":true},{"text":" Running function hub/particle.mcfunction","color":"white","bold":false}]
 
 # Particles
-    execute at @e[tag=teamers,limit=7,type=interaction] run particle firework ~ ~0.5 ~ 0.2 0.2 0.2 0 2 normal
+    execute at @e[tag=colors,limit=7,type=interaction] run particle firework ~ ~0.5 ~ 0.2 0.2 0.2 0 2 normal
     particle minecraft:small_flame -12.635 -60 40.60 .2 1 .2 0 5
     particle minecraft:small_flame -14.50 -57.50 38.50 .3 1 .3 0 5
     execute at @e[tag=sculkMap,type=interaction] run particle minecraft:sculk_soul ~ ~.5 ~ 0 0 0 0.1 5
